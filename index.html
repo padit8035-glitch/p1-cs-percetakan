@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI CS Percetakan - Arya</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:640px;margin:24px auto;padding:0 16px}
+#chat{border:1px solid #ddd;border-radius:12px;padding:12px;min-height:220px;margin:12px 0}
+.me{color:#0b5fff;margin-top:8px}.bot{white-space:pre-line}
+.row{display:flex;gap:8px}input{flex:1;padding:8px}button{padding:8px 12px}
+.chip{border:1px solid #ddd;border-radius:20px;padding:4px 10px;margin:2px;cursor:pointer;display:inline-block}
+</style>
+</head>
+<body>
+<h1>AI CS Percetakan (demo Arya)</h1>
+<p>Ex-operator cutting → belajar AI automation. Ketik pertanyaan harga di bawah.</p>
+<div>
+<span class="chip" onclick="ask('cutting stiker berapa?')">cutting stiker berapa?</span>
+<span class="chip" onclick="ask('banner 2x1 berapa?')">banner 2x1 berapa?</span>
+<span class="chip" onclick="ask('jam buka kapan?')">jam buka kapan?</span>
+<span class="chip" onclick="ask('bisa bikin pesawat?')">bisa bikin pesawat?</span>
+</div>
+<div id="chat"></div>
+<div class="row">
+<input id="in" placeholder="cth: cutting stiker berapa?">
+<button onclick="send()">Kirim</button>
+</div>
+<script src="./knowledge.js"></script>
+<script src="./brain.js"></script>
+<script>
+function add(q,a){
+  document.getElementById('chat').innerHTML += `<div class=me>Kamu: ${q}</div><div class=bot>Bot: ${a}</div><hr>`;
+}
+function ask(q){ document.getElementById('in').value = q; send(); }
+function send(){
+  const el = document.getElementById('in');
+  const q = el.value;
+  const a = window.answerLocal(q);
+  add(q,a);
+  el.value='';
+}
+</script>
+</body>
+</html>

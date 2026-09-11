@@ -1,0 +1,3 @@
+0-10s: "Saya Arya, ex-operator cutting. Ini chatbot CS percetakan saya."
+10-40s: ketik stiker, banner, kartu, lalu yang ngawur (tunjukin fallback WA).
+40-60s: "Workflow + test ada di GitHub, link di CV. Tanpa ngarang harga."
