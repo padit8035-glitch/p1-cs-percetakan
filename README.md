@@ -8,6 +8,8 @@ A customer-service chatbot for a small printing business, built after running th
 
 ![Chat interface](docs/preview.png)
 
+**Live demo:** https://padit8035-glitch.github.io/p1-cs-percetakan/
+
 ## How it works
 
 ```
