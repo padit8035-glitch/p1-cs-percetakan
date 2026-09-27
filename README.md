@@ -6,6 +6,8 @@ A customer-service chatbot for a small printing business, built after running th
 
 **No API key required.** The default mode is a local keyword matcher; an optional LLM mode is layered on top with the price list injected into the prompt.
 
+![Chat interface](docs/preview.png)
+
 ## How it works
 
 ```
