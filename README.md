@@ -1,5 +1,7 @@
 # AI Customer Service — Printing Shop
 
+[![test](https://github.com/padit8035-glitch/p1-cs-percetakan/actions/workflows/test.yml/badge.svg)](https://github.com/padit8035-glitch/p1-cs-percetakan/actions/workflows/test.yml) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 A customer-service chatbot for a small printing business, built after running the cutting machine myself. Customers kept asking the same pricing questions, so the answers are now automated — with a hard rule that the bot never invents a price.
 
 **No API key required.** The default mode is a local keyword matcher; an optional LLM mode is layered on top with the price list injected into the prompt.
